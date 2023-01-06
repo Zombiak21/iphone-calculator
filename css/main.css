@@ -73,6 +73,12 @@ body {
 .calc__btns .btn-numbers:hover {
   background-color: #777;
 }
+.calc__btns .-active {
+  background-color: #fff;
+}
+.calc__btns .-active .btn-math {
+  color: orange;
+}
 .calc__btns #btnZero {
   width: 100%;
   border-radius: 40px;
