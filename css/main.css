@@ -1,1 +1,90 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  background-color: #222;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calc {
+  display: grid;
+  grid-template-rows: 2fr 4fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "result" "btns";
+  width: 400px;
+  height: 600px;
+  padding: 25px;
+  background-color: #000;
+}
+.calc__result {
+  position: relative;
+  grid-area: result;
+}
+.calc__result-span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 7rem;
+  font-weight: 300;
+}
+.calc__btns {
+  display: grid;
+  grid-area: btns;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+.calc__btns .btn-func {
+  background-color: #777;
+}
+.calc__btns .btn-func:hover {
+  background-color: #fff;
+}
+.calc__btns .btn-math {
+  background-color: orange;
+  color: #fff;
+}
+.calc__btns .btn-math:hover {
+  color: orange;
+  background-color: #fff;
+}
+.calc__btns .btn-numbers {
+  background-color: #222;
+  color: #fff;
+}
+.calc__btns .btn-numbers:hover {
+  background-color: #777;
+}
+.calc__btns #btnZero {
+  width: 100%;
+  border-radius: 40px;
+  grid-column: 1/3;
+}
+.calc__btn {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  border: none;
+  transition: 0.2s background-color;
+}/*# sourceMappingURL=main.css.map */
